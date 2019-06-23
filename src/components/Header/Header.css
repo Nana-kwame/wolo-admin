@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'Nunito', sans-serif;
+    background-color: #98A6E0;
+    box-shadow: 3px 4px 1px #ccc;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-button {
+    padding: 0 7.5px;
+    font-family: 'Nunito', sans-serif;
+}

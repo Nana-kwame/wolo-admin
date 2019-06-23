@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Welcome from './pages/Welcome/Welcome';
+import LandingPage from './pages/LandingPage/LandingPage';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const buttons = [
+        {
+            text: 'Sign In',
+            id: 1
+        }, {
+            text: 'Join',
+            id: 2
+        }
+    ]
+    return (
+
+        <div>
+            {/* <Header buttons={buttons}/> */}
+            <LandingPage/>
+        </div>
+
+    );
 }
 
 export default App;
