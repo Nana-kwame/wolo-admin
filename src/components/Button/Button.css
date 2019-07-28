@@ -1,39 +1,20 @@
-.btn {
-	display: inline-block;
+.button {
+	width: 120px;
+	height: 60px;
+	border-radius: 10px;
+	background: linear-gradient(to left, black 50%, white 50%);
+	background-position: right bottom;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Darker Grotesque', sans-serif;
 	cursor: pointer;
-	text-align: center;
-	pointer-events: auto;
-	color: #333;
-	border: 0;
-	border-radius: 1.85em;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 0.885em;
-	padding: 1em 2em;
-	margin: 0 auto;
-	background: rgba(251, 224, 148, 0.8);
-	-webkit-transition: background 0.3s, opacity 0.3s;
-	transition: background 0.3s, opacity 0.3s;
+	transition: all .5s ease;
+	background-size: 200% 100%;
 }
 
-.btn:focus {
-	outline: none;
-}
-
-.btn:hover {
-	background: rgba(251, 224, 148, 1);
-}
-
-.btn--trigger {
-	width: 15em;
-	/* position: absolute; */
-	bottom: 2em;
-	left: 50%;
-	margin: 0 0 0 -7.5em;
-}
-
-.btn--hidden {
-	opacity: 0;
-	pointer-events: none;
+.button:hover {
+	background-position: left bottom;
+	color: black;
 }

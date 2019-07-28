@@ -1,27 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Motion, spring } from 'react-motion'
+import SegmentEffect from './components/SegmentEffect';
+import MouseFocus from './components/MouseFocus';
 import './App.css';
-import Header from './components/Header/Header';
-import Welcome from './pages/Welcome/Welcome';
-import LandingPage from './pages/LandingPage/LandingPage';
 
-function App() {
-    const buttons = [
-        {
-            text: 'Sign In',
-            id: 1
-        }, {
-            text: 'Join',
-            id: 2
-        }
-    ]
+class App extends Component {
+  render() {
     return (
-
-        <div>
-            {/* <Header buttons={buttons}/> */}
-            <LandingPage/>
-        </div>
-
+      <div className="app">
+        <MouseFocus/>
+        <SegmentEffect/>
+      </div>
     );
+  }
 }
 
 export default App;

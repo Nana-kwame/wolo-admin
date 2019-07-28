@@ -1,14 +1,12 @@
 import React from 'react'
 import './Button.css';
-const Button = ({name, btnClicked, style}) => {
-    return (
-        <div>
-            <button className={["btn btn--trigger" ]} style={style} onClick={btnClicked}>
-                {name}
-            </button>
+
+const Button = ({clicked, text}) => {
+    return ( 
+        <div className="button">
+            {text}
         </div>
-
-    );
+     );
 }
-
+ 
 export default Button;
