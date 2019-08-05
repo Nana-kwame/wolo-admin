@@ -9,7 +9,9 @@ h1 {
 }
 
 .segmenter {
-    /*position: relative;*/
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
 }
 
 .segmenter__background,
